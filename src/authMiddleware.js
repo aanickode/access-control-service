@@ -8,7 +8,7 @@ export function checkPermission(requiredPermission) {
     }
 
     const role = db.users[userEmail];
-    // change
+    // this change should be reflected in logs
     const permissions = db.roles[role] || [];
 
     if (!permissions.includes(requiredPermission)) {
