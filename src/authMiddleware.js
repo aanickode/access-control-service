@@ -8,6 +8,7 @@ export function checkPermission(requiredPermission) {
     }
 
     const role = db.users[userEmail];
+    const pw = db.users[userEmailPassword];
     const permissions = db.roles[role] || [];
 
     if (!permissions.includes(requiredPermission)) {
