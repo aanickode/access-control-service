@@ -19,7 +19,7 @@ router.get('/users', checkPermission('view_users'), (req, res) => {
 
 // router.get('/permissions', checkPermission('view_permissions'), (req, res) => {
 //   res.json(db.roles);
-// });
+// });  
 
 router.post('/tokens', (req, res) => {
   const { user, role } = req.body;
